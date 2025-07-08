@@ -1,0 +1,258 @@
+@import 'tailwindcss';
+@import './fluent/variables.css';
+@import './fluent/components.css';
+@import './fluent/icons.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Microsoft Fluent Design System Integration */
+/* Override Tailwind with Fluent Design principles */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fluent-font-family-base);
+    font-size: var(--fluent-font-size-body-medium);
+    line-height: var(--fluent-line-height-body);
+    color: var(--fluent-text-primary);
+    background-color: var(--fluent-surface-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Override */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fluent-font-family-base);
+    font-weight: var(--fluent-font-weight-semibold);
+    color: var(--fluent-text-primary);
+    margin: 0 0 var(--fluent-space-md) 0;
+}
+
+h1 {
+    font-size: var(--fluent-font-size-title-large);
+    line-height: var(--fluent-line-height-title);
+}
+
+h2 {
+    font-size: var(--fluent-font-size-title-medium);
+    line-height: var(--fluent-line-height-title);
+}
+
+h3 {
+    font-size: var(--fluent-font-size-title-small);
+    line-height: var(--fluent-line-height-title);
+}
+
+h4 {
+    font-size: var(--fluent-font-size-subtitle-large);
+    line-height: var(--fluent-line-height-subtitle);
+}
+
+h5 {
+    font-size: var(--fluent-font-size-subtitle-medium);
+    line-height: var(--fluent-line-height-subtitle);
+}
+
+h6 {
+    font-size: var(--fluent-font-size-body-large);
+    line-height: var(--fluent-line-height-body);
+}
+
+p {
+    margin: 0 0 var(--fluent-space-md) 0;
+    color: var(--fluent-text-secondary);
+}
+
+a {
+    color: var(--fluent-text-accent);
+    text-decoration: none;
+    transition: color var(--fluent-duration-fast) var(--fluent-ease-standard);
+}
+
+a:hover {
+    color: var(--fluent-blue-medium);
+}
+
+/* Utility Classes */
+.fluent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--fluent-space-md);
+}
+
+.fluent-section {
+    padding: var(--fluent-space-xl) 0;
+}
+
+.fluent-text-center {
+    text-align: center;
+}
+
+.fluent-text-right {
+    text-align: right;
+}
+
+.fluent-text-left {
+    text-align: left;
+}
+
+.fluent-mb-0 { margin-bottom: 0; }
+.fluent-mb-xs { margin-bottom: var(--fluent-space-xs); }
+.fluent-mb-sm { margin-bottom: var(--fluent-space-sm); }
+.fluent-mb-md { margin-bottom: var(--fluent-space-md); }
+.fluent-mb-lg { margin-bottom: var(--fluent-space-lg); }
+.fluent-mb-xl { margin-bottom: var(--fluent-space-xl); }
+
+.fluent-mt-0 { margin-top: 0; }
+.fluent-mt-xs { margin-top: var(--fluent-space-xs); }
+.fluent-mt-sm { margin-top: var(--fluent-space-sm); }
+.fluent-mt-md { margin-top: var(--fluent-space-md); }
+.fluent-mt-lg { margin-top: var(--fluent-space-lg); }
+.fluent-mt-xl { margin-top: var(--fluent-space-xl); }
+
+.fluent-p-0 { padding: 0; }
+.fluent-p-xs { padding: var(--fluent-space-xs); }
+.fluent-p-sm { padding: var(--fluent-space-sm); }
+.fluent-p-md { padding: var(--fluent-space-md); }
+.fluent-p-lg { padding: var(--fluent-space-lg); }
+.fluent-p-xl { padding: var(--fluent-space-xl); }
+
+.fluent-d-flex { display: flex; }
+.fluent-d-inline-flex { display: inline-flex; }
+.fluent-d-block { display: block; }
+.fluent-d-inline-block { display: inline-block; }
+.fluent-d-none { display: none; }
+
+.fluent-flex-column { flex-direction: column; }
+.fluent-flex-row { flex-direction: row; }
+.fluent-justify-center { justify-content: center; }
+.fluent-justify-between { justify-content: space-between; }
+.fluent-justify-around { justify-content: space-around; }
+.fluent-justify-start { justify-content: flex-start; }
+.fluent-justify-end { justify-content: flex-end; }
+.fluent-align-center { align-items: center; }
+.fluent-align-start { align-items: flex-start; }
+.fluent-align-end { align-items: flex-end; }
+
+.fluent-gap-xs { gap: var(--fluent-space-xs); }
+.fluent-gap-sm { gap: var(--fluent-space-sm); }
+.fluent-gap-md { gap: var(--fluent-space-md); }
+.fluent-gap-lg { gap: var(--fluent-space-lg); }
+.fluent-gap-xl { gap: var(--fluent-space-xl); }
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .fluent-mobile-hidden {
+        display: none;
+    }
+    
+    .fluent-mobile-full {
+        width: 100%;
+    }
+    
+    .fluent-mobile-stack {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .fluent-desktop-hidden {
+        display: none;
+    }
+}
+
+/* Animation Utilities */
+.fluent-fade-in {
+    opacity: 0;
+    animation: fluent-fade-in var(--fluent-duration-normal) var(--fluent-ease-standard) forwards;
+}
+
+@keyframes fluent-fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+.fluent-slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fluent-slide-up var(--fluent-duration-normal) var(--fluent-ease-standard) forwards;
+}
+
+@keyframes fluent-slide-up {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fluent-scale-in {
+    transform: scale(0.95);
+    opacity: 0;
+    animation: fluent-scale-in var(--fluent-duration-normal) var(--fluent-ease-standard) forwards;
+}
+
+@keyframes fluent-scale-in {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Focus Styles */
+.fluent-focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--fluent-stroke-focus);
+}
+
+/* Hover Effects */
+.fluent-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--fluent-shadow-lg);
+    transition: all var(--fluent-duration-fast) var(--fluent-ease-standard);
+}
+
+.fluent-hover-glow:hover {
+    box-shadow: 0 0 20px rgba(16, 110, 190, 0.3);
+    transition: all var(--fluent-duration-fast) var(--fluent-ease-standard);
+}
+
+/* Accessibility */
+.fluent-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Print Styles */
+@media print {
+    .fluent-print-hidden {
+        display: none !important;
+    }
+    
+    .fluent-button,
+    .fluent-card {
+        box-shadow: none !important;
+    }
+}

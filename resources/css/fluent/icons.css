@@ -1,0 +1,790 @@
+/* Microsoft Fluent Design System - Icons CSS */
+
+/* Segoe Fluent Icons Font */
+@font-face {
+  font-family: 'Segoe Fluent Icons';
+  src: url('https://res.cdn.office.net/officehub/bundles/embed-fe3e1411/fonts/segoeui/SegoeUI-Regular.woff2') format('woff2'),
+       url('https://res.cdn.office.net/officehub/bundles/embed-fe3e1411/fonts/segoeui/SegoeUI-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+/* Base Icon Class */
+.fluent-icon {
+  display: inline-block;
+  font-family: 'Segoe Fluent Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon Sizes */
+.fluent-icon-12 {
+  font-size: 12px;
+}
+
+.fluent-icon-16 {
+  font-size: 16px;
+}
+
+.fluent-icon-20 {
+  font-size: 20px;
+}
+
+.fluent-icon-24 {
+  font-size: 24px;
+}
+
+.fluent-icon-28 {
+  font-size: 28px;
+}
+
+.fluent-icon-32 {
+  font-size: 32px;
+}
+
+.fluent-icon-40 {
+  font-size: 40px;
+}
+
+.fluent-icon-48 {
+  font-size: 48px;
+}
+
+/* Common Fluent Icons */
+.fluent-icon-home::before {
+  content: '\E80F';
+}
+
+.fluent-icon-add::before {
+  content: '\E710';
+}
+
+.fluent-icon-edit::before {
+  content: '\E70F';
+}
+
+.fluent-icon-delete::before {
+  content: '\E74D';
+}
+
+.fluent-icon-search::before {
+  content: '\E721';
+}
+
+.fluent-icon-filter::before {
+  content: '\E71C';
+}
+
+.fluent-icon-save::before {
+  content: '\E74E';
+}
+
+.fluent-icon-cancel::before {
+  content: '\E711';
+}
+
+.fluent-icon-back::before {
+  content: '\E72B';
+}
+
+.fluent-icon-forward::before {
+  content: '\E72A';
+}
+
+.fluent-icon-refresh::before {
+  content: '\E72C';
+}
+
+.fluent-icon-settings::before {
+  content: '\E713';
+}
+
+.fluent-icon-more::before {
+  content: '\E712';
+}
+
+.fluent-icon-star::before {
+  content: '\E734';
+}
+
+.fluent-icon-star-filled::before {
+  content: '\E735';
+}
+
+.fluent-icon-heart::before {
+  content: '\E8DF';
+}
+
+.fluent-icon-heart-filled::before {
+  content: '\E8E0';
+}
+
+.fluent-icon-bookmark::before {
+  content: '\E8A4';
+}
+
+.fluent-icon-bookmark-filled::before {
+  content: '\E8A5';
+}
+
+.fluent-icon-share::before {
+  content: '\E72D';
+}
+
+.fluent-icon-copy::before {
+  content: '\E8C8';
+}
+
+.fluent-icon-paste::before {
+  content: '\E77F';
+}
+
+.fluent-icon-cut::before {
+  content: '\E8C6';
+}
+
+.fluent-icon-download::before {
+  content: '\E896';
+}
+
+.fluent-icon-upload::before {
+  content: '\E898';
+}
+
+.fluent-icon-folder::before {
+  content: '\E8B7';
+}
+
+.fluent-icon-folder-open::before {
+  content: '\E8B8';
+}
+
+.fluent-icon-file::before {
+  content: '\E8A5';
+}
+
+.fluent-icon-image::before {
+  content: '\E8B9';
+}
+
+.fluent-icon-video::before {
+  content: '\E8B2';
+}
+
+.fluent-icon-audio::before {
+  content: '\E8D6';
+}
+
+.fluent-icon-document::before {
+  content: '\E8A5';
+}
+
+.fluent-icon-pdf::before {
+  content: '\E8A5';
+}
+
+.fluent-icon-mail::before {
+  content: '\E715';
+}
+
+.fluent-icon-phone::before {
+  content: '\E717';
+}
+
+.fluent-icon-message::before {
+  content: '\E8BD';
+}
+
+.fluent-icon-notification::before {
+  content: '\E7E7';
+}
+
+.fluent-icon-calendar::before {
+  content: '\E787';
+}
+
+.fluent-icon-clock::before {
+  content: '\E823';
+}
+
+.fluent-icon-timer::before {
+  content: '\E91E';
+}
+
+.fluent-icon-stopwatch::before {
+  content: '\E916';
+}
+
+.fluent-icon-alarm::before {
+  content: '\E825';
+}
+
+.fluent-icon-location::before {
+  content: '\E81D';
+}
+
+.fluent-icon-map::before {
+  content: '\E909';
+}
+
+.fluent-icon-pin::before {
+  content: '\E840';
+}
+
+.fluent-icon-flag::before {
+  content: '\E7C1';
+}
+
+.fluent-icon-user::before {
+  content: '\E77B';
+}
+
+.fluent-icon-users::before {
+  content: '\E716';
+}
+
+.fluent-icon-contact::before {
+  content: '\E77B';
+}
+
+.fluent-icon-account::before {
+  content: '\E77B';
+}
+
+.fluent-icon-lock::before {
+  content: '\E72E';
+}
+
+.fluent-icon-unlock::before {
+  content: '\E785';
+}
+
+.fluent-icon-key::before {
+  content: '\E8E7';
+}
+
+.fluent-icon-shield::before {
+  content: '\E8AC';
+}
+
+.fluent-icon-security::before {
+  content: '\E8AC';
+}
+
+.fluent-icon-visibility::before {
+  content: '\E8F4';
+}
+
+.fluent-icon-visibility-off::before {
+  content: '\E8F5';
+}
+
+.fluent-icon-check::before {
+  content: '\E73E';
+}
+
+.fluent-icon-checkmark::before {
+  content: '\E73E';
+}
+
+.fluent-icon-close::before {
+  content: '\E8BB';
+}
+
+.fluent-icon-dismiss::before {
+  content: '\E8BB';
+}
+
+.fluent-icon-error::before {
+  content: '\E783';
+}
+
+.fluent-icon-warning::before {
+  content: '\E7BA';
+}
+
+.fluent-icon-info::before {
+  content: '\E946';
+}
+
+.fluent-icon-help::before {
+  content: '\E897';
+}
+
+.fluent-icon-question::before {
+  content: '\E897';
+}
+
+.fluent-icon-play::before {
+  content: '\E768';
+}
+
+.fluent-icon-pause::before {
+  content: '\E769';
+}
+
+.fluent-icon-stop::before {
+  content: '\E71A';
+}
+
+.fluent-icon-previous::before {
+  content: '\E892';
+}
+
+.fluent-icon-next::before {
+  content: '\E893';
+}
+
+.fluent-icon-volume::before {
+  content: '\E767';
+}
+
+.fluent-icon-volume-mute::before {
+  content: '\E74F';
+}
+
+.fluent-icon-fullscreen::before {
+  content: '\E740';
+}
+
+.fluent-icon-minimize::before {
+  content: '\E921';
+}
+
+.fluent-icon-maximize::before {
+  content: '\E922';
+}
+
+.fluent-icon-resize::before {
+  content: '\E739';
+}
+
+.fluent-icon-move::before {
+  content: '\E7C2';
+}
+
+.fluent-icon-drag::before {
+  content: '\E7C2';
+}
+
+.fluent-icon-sort::before {
+  content: '\E8CB';
+}
+
+.fluent-icon-sort-asc::before {
+  content: '\E8CB';
+}
+
+.fluent-icon-sort-desc::before {
+  content: '\E8CC';
+}
+
+.fluent-icon-grid::before {
+  content: '\E8A9';
+}
+
+.fluent-icon-list::before {
+  content: '\E8FD';
+}
+
+.fluent-icon-table::before {
+  content: '\E8A9';
+}
+
+.fluent-icon-chart::before {
+  content: '\E999';
+}
+
+.fluent-icon-graph::before {
+  content: '\E999';
+}
+
+.fluent-icon-pie-chart::before {
+  content: '\E99A';
+}
+
+.fluent-icon-bar-chart::before {
+  content: '\E99B';
+}
+
+.fluent-icon-line-chart::before {
+  content: '\E99C';
+}
+
+.fluent-icon-print::before {
+  content: '\E749';
+}
+
+.fluent-icon-scan::before {
+  content: '\E8FE';
+}
+
+.fluent-icon-camera::before {
+  content: '\E722';
+}
+
+.fluent-icon-microphone::before {
+  content: '\E720';
+}
+
+.fluent-icon-speaker::before {
+  content: '\E767';
+}
+
+.fluent-icon-headphones::before {
+  content: '\E7F5';
+}
+
+.fluent-icon-bluetooth::before {
+  content: '\E702';
+}
+
+.fluent-icon-wifi::before {
+  content: '\E701';
+}
+
+.fluent-icon-network::before {
+  content: '\E8A8';
+}
+
+.fluent-icon-signal::before {
+  content: '\E8A8';
+}
+
+.fluent-icon-battery::before {
+  content: '\E83F';
+}
+
+.fluent-icon-power::before {
+  content: '\E7E8';
+}
+
+.fluent-icon-brightness::before {
+  content: '\E706';
+}
+
+.fluent-icon-contrast::before {
+  content: '\E793';
+}
+
+.fluent-icon-theme::before {
+  content: '\E790';
+}
+
+.fluent-icon-palette::before {
+  content: '\E790';
+}
+
+.fluent-icon-color::before {
+  content: '\E790';
+}
+
+.fluent-icon-brush::before {
+  content: '\E771';
+}
+
+.fluent-icon-pen::before {
+  content: '\E70F';
+}
+
+.fluent-icon-pencil::before {
+  content: '\E70F';
+}
+
+.fluent-icon-marker::before {
+  content: '\E76D';
+}
+
+.fluent-icon-highlighter::before {
+  content: '\E76D';
+}
+
+.fluent-icon-eraser::before {
+  content: '\E75C';
+}
+
+.fluent-icon-ruler::before {
+  content: '\E8B5';
+}
+
+.fluent-icon-calculator::before {
+  content: '\E8EF';
+}
+
+.fluent-icon-code::before {
+  content: '\E943';
+}
+
+.fluent-icon-terminal::before {
+  content: '\E756';
+}
+
+.fluent-icon-console::before {
+  content: '\E756';
+}
+
+.fluent-icon-bug::before {
+  content: '\E825';
+}
+
+.fluent-icon-database::before {
+  content: '\E8EA';
+}
+
+.fluent-icon-server::before {
+  content: '\E8EA';
+}
+
+.fluent-icon-cloud::before {
+  content: '\E753';
+}
+
+.fluent-icon-sync::before {
+  content: '\E895';
+}
+
+.fluent-icon-connect::before {
+  content: '\E8A8';
+}
+
+.fluent-icon-disconnect::before {
+  content: '\E8A8';
+}
+
+.fluent-icon-link::before {
+  content: '\E71B';
+}
+
+.fluent-icon-unlink::before {
+  content: '\E8CC';
+}
+
+.fluent-icon-chain::before {
+  content: '\E71B';
+}
+
+.fluent-icon-world::before {
+  content: '\E774';
+}
+
+.fluent-icon-globe::before {
+  content: '\E774';
+}
+
+.fluent-icon-earth::before {
+  content: '\E774';
+}
+
+.fluent-icon-language::before {
+  content: '\E774';
+}
+
+.fluent-icon-translate::before {
+  content: '\E774';
+}
+
+/* Food and Kitchen Icons */
+.fluent-icon-food::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-restaurant::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-utensils::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-fork::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-knife::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-spoon::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-plate::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-bowl::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-cup::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-glass::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-bottle::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-chef::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-cooking::before {
+  content: '\E7BC';
+}
+
+.fluent-icon-recipe::before {
+  content: '\E8A5';
+}
+
+.fluent-icon-ingredients::before {
+  content: '\E8FD';
+}
+
+.fluent-icon-menu::before {
+  content: '\E8FD';
+}
+
+/* Icon States */
+.fluent-icon-disabled {
+  opacity: var(--fluent-opacity-disabled);
+}
+
+.fluent-icon-active {
+  color: var(--fluent-blue-dark);
+}
+
+.fluent-icon-hover:hover {
+  color: var(--fluent-blue-medium);
+  transition: color var(--fluent-duration-fast) var(--fluent-ease-standard);
+}
+
+/* Icon in Buttons */
+.fluent-button .fluent-icon {
+  margin-right: var(--fluent-space-xs);
+}
+
+.fluent-button .fluent-icon:only-child {
+  margin-right: 0;
+}
+
+/* Icon in Navigation */
+.fluent-nav-link .fluent-icon {
+  margin-right: var(--fluent-space-xs);
+}
+
+/* Icon in Lists */
+.fluent-list-item .fluent-icon {
+  margin-right: var(--fluent-space-sm);
+  color: var(--fluent-text-secondary);
+}
+
+/* Icon in Cards */
+.fluent-card-header .fluent-icon {
+  margin-right: var(--fluent-space-sm);
+}
+
+/* Icon in Forms */
+.fluent-form-group .fluent-icon {
+  margin-right: var(--fluent-space-xs);
+}
+
+/* Icon in Alerts */
+.fluent-alert .fluent-icon {
+  margin-right: var(--fluent-space-sm);
+  flex-shrink: 0;
+}
+
+/* Icon Colors */
+.fluent-icon-primary {
+  color: var(--fluent-blue-dark);
+}
+
+.fluent-icon-success {
+  color: var(--fluent-success-dark);
+}
+
+.fluent-icon-warning {
+  color: var(--fluent-warning-dark);
+}
+
+.fluent-icon-error {
+  color: var(--fluent-error-dark);
+}
+
+.fluent-icon-secondary {
+  color: var(--fluent-text-secondary);
+}
+
+.fluent-icon-tertiary {
+  color: var(--fluent-text-tertiary);
+}
+
+/* Icon Animations */
+.fluent-icon-spin {
+  animation: fluent-icon-spin 1s linear infinite;
+}
+
+@keyframes fluent-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fluent-icon-pulse {
+  animation: fluent-icon-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes fluent-icon-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.fluent-icon-bounce {
+  animation: fluent-icon-bounce 1s ease-in-out infinite;
+}
+
+@keyframes fluent-icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Icons */
+@media (max-width: 768px) {
+  .fluent-icon-responsive {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .fluent-icon-responsive {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fluent-icon-responsive {
+    font-size: 24px;
+  }
+}
